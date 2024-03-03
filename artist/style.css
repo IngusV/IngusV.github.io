@@ -1,7 +1,6 @@
 
 
-
-
+base{color: brown;}
 
 
 
@@ -9,6 +8,13 @@
 
 img{
     
-width: 80%;
+    max-width: 30%;
+    
+    }
 
-}
+
+img{
+    
+    max-width: 10%;
+    
+    }
