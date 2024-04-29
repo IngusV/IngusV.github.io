@@ -26,7 +26,7 @@ function draw() {
   background('hotpink');
 
   if(userHasClicked == false){
-      text('Hi, click to continue ayyyyy',
+      text('Hi, click to continue this super cool interactive soundscape with sound effects',
       width/2,
       height/2
       )
