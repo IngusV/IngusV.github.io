@@ -1,30 +1,82 @@
-let img;
-let circleX = 100 
-let circleY = 100
-
+let height1 = 10 
+let width1 = ['100', '200', '300', '400', '500', '600', ]
+let height2 = ['100', '200', '300', '400', '500', '600', ]
+let colors = ['black', 'red', 'blue', 'green', 'yellow', 'pink', ]
 // Load the image and create a p5.Image object.
-function preload() {
-    img = loadImage("./spot.png");
-}
+
  
 function setup() {
     createCanvas(windowWidth, windowHeight);
+
+    frameRate(60)
+
+    
 }
  
 function draw() {
-    background(0);
+    background(255, 255, 255);
  
-    image(img, mouseX, mouseY);
+
+
+    fill(random(colors))
+
+    rect(10, 10, random(width1), 10)
+    fill(random(colors))
+
+    rect(10, 110, random(width1), 10)
+    fill(random(colors))
     
-    imageMode(CENTER);
- 
-    noFill();
-    circle(circleX, circleY, 60);
+    rect(10, 210, random(width1), 10)
+    fill(random(colors))
 
-    let d = dist(mouseX, mouseY, circleX, circleY)
+    rect(10, 310, random(width1), 10)
+    fill(random(colors))
+    
+    rect(10, 410, random(width1), 10)
+    fill(random(colors))
 
-    if(d < 30){
-circleX = random(0, width)
-circleY = random(0, height)
-    }
+    rect(10, 510, random(width1), 10)
+    fill(random(colors))
+    
+
+
+    rect(10, 10, 10, random(height2))
+    fill(random(colors))
+
+    rect(110, 10, 10, random(height2))
+    fill(random(colors))
+    
+    rect(210, 10, 10, random(height2))
+    fill(random(colors))
+
+    rect(310, 10, 10, random(height2))
+    fill(random(colors))
+    
+    rect(410, 10, 10, random(height2))
+    fill(random(colors))
+
+    rect(510, 10, 10, random(height2))
+  
+
+
+
+    textSize(20);
+    stroke(0);
+    strokeWeight(1);
+    fill ('black')
+    text('Click anywhere to redraw!  Spied jebkur lai izveidotu jaunu zīmējumu!', 50, 650);
+    
+    
+
+    noLoop()
+
+    
 }
+
+
+    
+
+
+function mousePressed() {
+    redraw();
+  }
