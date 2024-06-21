@@ -8,7 +8,7 @@ function setup() {
     
     angleMode(DEGREES);
 
-    background('black')
+    background(random(0, 50), 0, random(0, 50))
 
 }
  

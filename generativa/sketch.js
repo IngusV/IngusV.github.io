@@ -63,7 +63,7 @@ function draw() {
     textSize(20);
     stroke(0);
     strokeWeight(1);
-    fill ('black')
+    fill (150)
     text('Click anywhere to redraw!  Spied jebkur lai izveidotu jaunu zīmējumu!', 50, 650);
     
     
